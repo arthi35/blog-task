@@ -11,7 +11,7 @@ const PostList = () => {
 
     const getAllPosts = async () => {
         try{
-            const response = await axios.get(`http://localhost:5000/employees`);
+            const response = await axios.get(`http://localhost:5000/posts`);
             setPosts(response.data);
         }catch(err){
             console.log('Error: ', err);
